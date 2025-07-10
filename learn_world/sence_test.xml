@@ -1,0 +1,14 @@
+<mujoco model="adada">
+    <compiler angle = "radian" meshdir="mesh" autolimits = "true"/>
+    <option timestep="0.001" gravity = "0 0 -9.8" wind="0 0 0" integrator = "implicitfast"/>
+    <visual>
+        <global realtime = "1"/>
+        <quality shadowsize="2000"/>
+        <headlight active = "1" diffuse = "1 1 1" specular = "1 1 1"/>
+        <rgba fog="1 0 0 1" haze="1 1 1 1" />
+    </visual>
+    <asset>
+        <mesh name="adfsa" vertex= "0 0 0 1 0 0 0 1 0 0 0 1"/>
+        <!-- <texture type="skybox" builtin="flat" rgb1 = ".1 .1 .9" rgb2 = ".2 .5 0.1" width = "128" height = "128"/> -->
+    </asset>
+</mujoco>
